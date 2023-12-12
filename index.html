@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>McDonald's</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="main">
+        <div class="circle"></div>
+        <header>
+            <a href="#index.html"><img src="assets/logo.webp" class="logo" alt=""></a>
+            <div class="toggle" onclick="toggle()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#section-2">My Orders</a></li>
+            </ul>
+            <div>
+                <img id="title" src="assets/title_header.webp" alt="">
+            </div>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Welcome to the <br> <span>McDonald's</span></h2>
+                <p>In 1954, Ray Kroc stumbled upon a small burger spot in California, marking the inception of our story. From those humble beginnings, we've grown into
+                    a global giant with over 36,000 restaurants across 100 countries. Today, our legacy as a leading food service brand is a testament
+                    to our enduring commitment to quality and service.
+                </p>
+                <a target="__blank" href="https://www.mcdonalds.com/us/en-us.html">Learn more</a>
+
+            </div>
+
+            <div class="imgbox">
+                <img src="assets/burger.png" class="burger" alt="">
+            </div>
+        </div>
+        <ul class="Slider">
+            <li><img src="assets/burger.png" alt="" onclick='slider("assets/burger.png");'></li>
+            <li><img src="assets/cococola.png" alt="" onclick='slider("assets/cococola.png");'></li>
+            <li><img src="assets/fries.png" alt="" onclick='slider("assets/fries.png");'></li>
+        </ul>
+
+        <ul class="icons">
+            <li><a target="__blank" href="https://github.com/anzilabdulhakkim"> <i class="fa fa-github"></i> </a></li>
+            <li><a target="__blank" href="https://twitter.com/ANZIL135"> <i class="fa fa-twitter"aria-hidden="true"></i> </a></li>
+            <li><a target="__blank" href="https://www.linkedin.com/in/anzilabdulhakkim"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+        </ul>
+    </section>
+    <hr>
+
+    <section id="section-2">
+        <h1>Welcome to Virtual McDonald's</h1><span style="text-decoration: underline;"><img id="underline" src="assets/yellow-vector.svg" alt=""></span>
+        <br>
+        <h3>FOOD ITEMS :</h3>
+        <br>
+    <label class="food">
+        <input type="checkbox" name="foodItem" value="Burger"> Burger
+    </label>
+    <label class="food">
+        <input type="checkbox" name="foodItem" value="Fries"> Fries
+    </label>
+    <label class="food">
+        <input type="checkbox" name="foodItem" value="Softdrink"> Soft drink
+    </label>
+    <label class="food">
+        <input type="checkbox" name="foodItem" value="combo"> Combo pack
+    </label>
+
+    <br>
+
+    <button id="orderFoodBtn" onclick="OrderFood()">Order Food</button>
+     <br>
+
+    <div id="BurgerImage" class="foodImage">
+        <img src="assets/burger_image.webp" alt="Burger Image">
+    </div>
+    <div id="FriesImage" class="foodImage">
+        <img src="assets/fries_image.webp" alt="Fries Image">
+    </div>
+    <div id="SoftdrinkImage" class="foodImage">
+        <img src="assets/soft_drink.webp" alt="Softdrink Image">
+    </div>
+    <div id="comboImage" class="foodImage">
+        <img src="assets/combo_pack.webp" alt="Combo Image">
+    </div>
+
+    <div id="orderNumber"></div>
+    </section>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
